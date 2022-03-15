@@ -1,8 +1,5 @@
 /*Add this in so that older browsers know how to display newer HTML5 elements*/
 header, nav, main, footer, aside {display: block;}
-/*By default browser only includes widht/height of the element to determine space to take up,
-by changing the box-sizing to border-box, any padding and border will be included in the width and height
-use universal selector (*) to select all elements*/
 *{box-sizing: border-box;}
 
 body {margin: 0;
@@ -29,17 +26,15 @@ aside {float: right;
 	 width: 200px;
 
 }
-main {margin: 0 21px 0 160px;
-	padding: 1px 10px 20px 10px;
+main {padding: 1px 10px 20px 10px;
 	background-color: #ffffff;
 	color: #006600;
+	overflow: auto;
 }
 footer {font-size: .70em;
         text-align: center;
         color: #006600;
-        background-color: #ffffff;
         padding-top: 10px;
-        clear: both; /*Clears the floated image in the center content area*/
 }
 h1 {margin-top: 0;
 	font-size: 3em;
